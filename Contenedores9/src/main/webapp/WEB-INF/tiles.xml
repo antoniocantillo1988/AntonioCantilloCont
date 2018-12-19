@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC       
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"       
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/tiles/layout.jsp">
+        <put-attribute name="header" value="/tiles/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/tiles/footer.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="body" value="/login/form.jsp" />
+    </definition>
+    
+    <definition name="form" extends="baseLayout">
+        <put-attribute name="body" value="/usuario/form.jsp" />
+    </definition>
+    
+    <definition name="listar" extends="baseLayout">
+        <put-attribute name="body" value="/usuario/lista.jsp" />
+    </definition>
+    
+    <definition name="alquilarListado" extends="baseLayout">
+        <put-attribute name="body" value="/alquilar/lista.jsp" />
+    </definition>
+    
+    <definition name="alquilarFormulario" extends="baseLayout">
+        <put-attribute name="body" value="/alquilar/form.jsp" />
+    </definition>
+    
+     <definition name="facturaListado" extends="baseLayout">
+        <put-attribute name="body" value="/factura/lista.jsp" />
+    </definition>
+    
+    <definition name="facturaFormulario" extends="baseLayout">
+        <put-attribute name="body" value="/factura/form.jsp" />
+    </definition>
+    
+    <definition name="formContenedores" extends="baseLayout">
+        <put-attribute name="body" value="/contenedores/form.jsp" />
+    </definition>
+    
+    <definition name="listadoContenedores" extends="baseLayout">
+        <put-attribute name="body" value="/contenedores/lista.jsp" />
+    </definition>
+    
+    <definition name="/contenedores/listarDisponibilidad" extends="baseLayout">
+        <put-attribute name="body" value="/contenedores/lista.jsp" />
+    </definition>
+    
+    <definition name="inicio" extends="baseLayout">
+        <put-attribute name="body" value="/login/inicio.jsp" />
+    </definition>
+    
+    <definition name="error" extends="baseLayout">
+        <put-attribute name="body" value="/tiles/error.jsp" />
+    </definition>
+    
+</tiles-definitions>
